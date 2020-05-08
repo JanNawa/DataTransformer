@@ -50,6 +50,7 @@ The other operations can do in any order that user expected it to do.
 	Use equationCode to validate the parameter and operation of calculation in data row.
 	Noted for equationCode :
 		There are 6 digits number. Each digit has different representation.
+		
 		A B C D E F
 		_ _ _ _ _ _
 		
