@@ -21,7 +21,7 @@ There are 3 main files :
 
 The program uses 2D Dynamic Array to maintain order of data 
 and data can be accessed by index to refer as column.
-Everytime the new column is added, it will be added to the end of the Array.\
+Everytime the new column is added, it will be added to the end of the Array.
 
 The program uses Static Array to validate the equation.
 Change the Static Array to String to check with the Equation Code
@@ -40,7 +40,7 @@ and do the calculation.
 The program read from file and processes the input file 1 line at a time. 
 It adds the data to the Dynamic Array, process repeated until the end of the file.
 
-The other operations can do in any order that user expected it to do.\
+The other operations can do in any order that user expected it to do.
 * newColumn\
 	Create new column in the data storage (2D array)
 	First, added the header. Then, added the default value 0 to all rows.
@@ -50,8 +50,8 @@ The other operations can do in any order that user expected it to do.\
 	Use equationCode to validate the parameter and operation of calculation in data row.
 	Noted for equationCode :
 		There are 6 digits number. Each digit has different representation.
-		A B C D E F\
-		_ _ _ _ _ _\
+		A B C D E F
+		_ _ _ _ _ _
 		
 		A - represent valid equation (1)
 		B - represent column name to validate equation (1)
