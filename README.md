@@ -1,25 +1,24 @@
-External Documentation
-----------------------------
+# External Documentation
 
-Overview
---------
+## Overview
+
 This program converts a text file that have tab separator as delimiter 
 into matrices of data that can do simple data analysis tasks. 
 Then, that data could be written into the text file that have tab separator
 as delimiter.
 
-Files and External Data
------------------------
+## Files and External Data
+
 There are 3 main files :
-- DataChangeUI.java
+* DataChangeUI.java
 	main for the program to interact with user
-- DataTransformer.java
+* DataTransformer.java
 	class that make data transformation
-- ParameterValidator.java
+* ParameterValidator.java
 	class that validate some parameter in DataTransformer
 
-Data Structures and their relations to each other
--------------------------------------------------
+## Data Structures and their relations to each other
+
 The program uses 2D Dynamic Array to maintain order of data 
 and data can be accessed by index to refer as column.
 Everytime the new column is added, it will be added to the end of the Array.
@@ -28,25 +27,25 @@ The program uses Static Array to validate the equation.
 Change the Static Array to String to check with the Equation Code
 and do the calculation.
 
-Assumptions
------------
-- File name will contain the full path to the file, including file extension.
-- Column names will be a single alphabetic string (no spaces).
-- Column Header will only contain alphabetic characters.
-- Data in column will have same data type.
+## Assumptions
 
-Key algorithms and design elements
-----------------------------------
-- read
+* File name will contain the full path to the file, including file extension.
+* Column names will be a single alphabetic string (no spaces).
+* Column Header will only contain alphabetic characters.
+* Data in column will have same data type.
+
+## Key algorithms and design elements
+
+* read
 The program read from file and processes the input file 1 line at a time. 
 It adds the data to the Dynamic Array, process repeated until the end of the file.
 
 The other operations can do in any order that user expected it to do.
-- newColumn
+* newColumn
 	Create new column in the data storage (2D array)
 	First, added the header. Then, added the default value 0 to all rows.
 	New column will always append to the end of the array.
-- calculate
+* calculate
 	Calculate the equation user entered and add to the data row.
 	Use equationCode to validate the parameter and operation of calculation in data row.
 	Noted for equationCode :
@@ -70,17 +69,17 @@ The other operations can do in any order that user expected it to do.
 		|	2 = is number;				|
 		|	3 = is column name;			|
 		-------------------------------------------------
-- clear
+* clear
 	clear all data in data storage
-- top
+* top
 	show top 5 rows of data in data storage
-- print
+* print
 	show all rows of data in data storage
-- write
+* write
 	write the data in data storage to the text file (seperated by tab)
 	If the file already exists, it will append to new file.	Otherwise, the new file will be created.
 
-Limitations
------------
+## Limitations
+
 The current design is limited to tab separated file.
 The row can't be added, only column can be added.
